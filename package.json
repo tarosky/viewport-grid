@@ -1,0 +1,20 @@
+{
+  "name": "viewport-grid",
+  "version": "1.0.0",
+  "description": "WordPress plugin development for Viewport Grid.",
+  "devDependencies": {
+    "@wordpress/env": "^5.10.0"
+  },
+  "scripts": {
+    "wp-env": "wp-env",
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "cli": "wp-env run cli wp"
+  },
+  "engines": {
+    "node": "18.20.8"
+  },
+  "volta": {
+    "node": "18.20.8"
+  }
+}

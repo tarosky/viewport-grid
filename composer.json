@@ -1,0 +1,29 @@
+{
+	"name": "tarosky/viewport-grid",
+	"description": "Viewport Grid",
+	"type": "wordpress-plugin",
+	"license": "GPL-3.0-or-later",
+	"authors": [
+		{
+			"name": "Tarosky",
+			"email": "info@tarosky.co.jp"
+		}
+	],
+	"minimum-stability": "stable",
+	"scripts": {
+		"lint": "phpcs --standard=phpcs.ruleset.xml $(find ./ -name '*.php')",
+		"fix": "phpcbf --standard=phpcs.ruleset.xml $(find ./ -name '*.php')"	},
+	"require": {
+		"php": ">=7.4",
+		"ext-mbstring": "*"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.0",
+		"wp-cli/wp-cli": "^2.10"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
