@@ -22,7 +22,7 @@ $preview_url = add_query_arg( 'admin_bar', '0', $validated );
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Viewport Grid Preview</title>
 	<link rel="stylesheet" href="<?php echo esc_url( VG_PLUGIN_URL . 'assets/style.css' ); ?>">
-	<script src="<?php echo includes_url('js/jquery/jquery.js'); ?>"></script>
+	<script src="<?php echo includes_url( 'js/jquery/jquery.js' ); ?>"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/packery/2.1.2/packery.pkgd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/2.3.0/draggabilly.pkgd.min.js"></script>
 </head>
@@ -32,7 +32,8 @@ $preview_url = add_query_arg( 'admin_bar', '0', $validated );
 		<button id="vg-all-reload" type="button">全体リロード</button>
 	</div>
 	<div class="vg-grid clearfix">
-		<?php foreach ( $viewports as $vp ) :
+		<?php
+		foreach ( $viewports as $vp ) :
 			$style = sprintf( 'width: %dpx; height: %dpx;', $vp['width'], $vp['height'] + 24 );
 			?>
 			<div class="vg-viewport" style="<?php echo esc_attr( $style ); ?>">
